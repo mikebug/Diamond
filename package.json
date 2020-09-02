@@ -1,24 +1,26 @@
 {
-  "name": "Diamond",
+  "name": "diamond",
   "version": "1.0.0",
-  "description": "Design System --- Diamond",
+  "description": "Design System --- Diamond\r                   /\\                \r                  /  \\\r                 /    \\\r                /      \\\r               /        \\\r              /          \\\r             /            \\\r            /              \\\r            \\              /\r             \\            /\r              \\          /\r               \\        /\r                \\      /\r                 \\    /\r                  \\  /\r                   \\/\r                   /\\                \r                  /  \\\r                 /    \\\r                /      \\\r               /        \\\r              /          \\\r             /            \\\r            /              \\\r            \\              /\r             \\            /\r              \\          /\r               \\        /\r                \\      /\r                 \\    /\r                  \\  /\r                   \\/\r                   /\\                \r                  /  \\\r                 /    \\\r                /      \\\r               /        \\\r              /          \\\r             /            \\\r            /              \\\r            \\              /\r             \\            /\r              \\          /\r               \\        /\r                \\      /\r                 \\    /\r                  \\  /\r                   \\/\r                   /\\                \r                  /  \\\r                 /    \\\r                /      \\\r               /        \\\r              /          \\\r             /            \\\r            /              \\\r            \\              /\r             \\            /\r              \\          /\r               \\        /\r                \\      /\r                 \\    /\r                  \\  /\r                   \\/",
   "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.14.1",
+    "sass": "^1.26.10"
+  },
+  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "w": "node-sass Diamond-Main.scss Diamond-Main.css --watch",
+    "b": "node-sass Diamond-Main.scss Diamond-Main.css"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mikebug/Diamond.git"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/mikebug/Diamond/issues"
   },
-  "homepage": "https://github.com/mikebug/Diamond#readme",
-  "dependencies": {
-    "node-sass": "^4.14.1",
-    "node-sass-chokidar": "^1.4.0"
-  }
+  "homepage": "https://github.com/mikebug/Diamond#readme"
 }

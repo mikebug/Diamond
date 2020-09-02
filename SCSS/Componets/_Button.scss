@@ -1,0 +1,20 @@
+.Button-Text{
+        background-color: #fff; /* Green */
+        border: none;
+        color: #333;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        font-family: font;
+        width: 10px;
+        height: 10px;
+}
+.Button{
+        padding: calc(5vw + 5px);
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        font-family: font;
+        background-color: #fff;
+}
