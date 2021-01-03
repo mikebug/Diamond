@@ -1,20 +1,62 @@
-.Button-Text{
-        background-color: #fff; /* Green */
-        border: none;
-        color: #333;
-        text-align: center;
-        text-decoration: none;
-        font-size: 16px;
-        font-family: font;
+//Original BUTTON
+.Button {
+  font-size: 16px;
+  font-family: font;
+  background-color: #fff;
+  display: inline-block;
+  height: 64px;
+  width: 64px;
+  border: 1px solid #252525;
+  transform: rotate(45deg);
+  cursor: pointer;
+  outline: 0;
+  padding: 0px;
+  margin: 12px;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+    1px 1px 0 #fff;
+  &:hover {
+    display: inline-block;
+    background-color: #f5f5f5;
+  }
+  
+  &:active {
+    background: #dfdfdf;
+    box-shadow: 0 1px 2px 0 #dfdfdf, .3, 0 3px 6px 2px #dfdfdf, .15;
+  }
+
+    &:focus{
+      &::after {
+        content: "";
+        display: block;
         width: 10px;
         height: 10px;
-}
-.Button{
-        padding: calc(5vw + 5px);
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        font-family: font;
-        background-color: #fff;
+        background-color: #252525;  
+        border-radius: 50%;
+        position: absolute;
+        z-index: 100;
+        top: -25px;
+        right: 30px;
+      }
+  }
+    
+  &-Text {
+    text-align: center;
+    font-family: font;
+    transform: rotate(-45deg);
+    opacity: 1;
+    &::selection{
+      background: #252525;
+      color: #fff;
+      text-shadow: none;
+      box-shadow: 0;
+    }
+  }
+  &-Outer {
+    display: inline-block;
+    height: 89px;
+    width: 89px;
+    top: 0px;
+    margin: 16px;
+  }
 }
